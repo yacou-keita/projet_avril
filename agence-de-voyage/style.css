@@ -1,0 +1,471 @@
+/*GENERALE*/
+body{
+	margin: 0;
+	padding: 0;
+
+}
+li{
+	list-style: none;
+
+}
+a{
+	text-decoration:none;
+}
+nav ul li{
+	text-decoration:none;
+}
+
+/*header*/
+header .contenu{
+	background-color: #ff6600;
+	
+
+}
+header img{
+	float: left;
+	width:50px;
+	position: absolute;
+	left: 120px;
+	top:0px;
+}
+header nav{
+	margin-top: 30px;
+}
+header nav ul li{
+	
+	display: inline-block;
+	font-weight: bold;
+}
+header nav ul li  a{
+	color: white;
+	text-transform: uppercase;
+	padding-left: 20px;
+	position: relative;
+	left: 400px
+
+
+
+}
+header nav ul li  a:hover{
+	color:#00cc00;
+	background-color:white;
+	padding: 20px; 
+
+}
+
+
+#logo{
+	position: absolute;
+	top:0px;
+	left: 180px; 
+}
+
+#logo h1{
+	color:#00cc00;
+	margin: 0;
+	font-size:23px;
+	position: relative;
+	right: 7px;
+
+}
+#logo small{
+	color:white;
+	font-style: italic;
+	position:relative;
+	left: 25px;
+}
+
+
+
+/*section villes*/
+ #image-1  img
+ {
+ 	height: 200px;
+ 	width: 350px;
+ 	padding-right: 20px;
+ 	border-radius: 5px;
+ }
+
+ #image-2  img
+ {
+ 	height: 200px;
+ 	width: 350px;
+ 	padding-right: 20px;
+ 	border-radius: 5px;
+
+ }
+
+#image-3  img
+ {
+ 	height: 200px;
+ 	width: 350px;
+ 	padding-right: 20px;
+ 	border-radius: 5px;
+
+ }
+
+ #ville .contenu
+ {
+ 	margin: 40px 10px 20px 0;
+ 	width: 800px;
+ 	padding-right: 40px;
+ 
+ 	
+ }
+
+ #ville .contenu h1
+ {
+ 	text-align: left;
+ 	margin-left: 20px;
+ 	color: #ff6600;
+ }
+
+#image-4
+{
+ 	width: 350px;
+	background-color: rgba(0,204,0,0.40);
+	position: absolute;
+	bottom: 274px;
+	left: 40px;
+	height: 35px;
+	border-radius: 5px 0 0 5px;
+
+}
+
+#image-5
+{
+ 	width: 350px;
+	background-color: rgba(0,204,0,0.40);
+	position: absolute;
+	bottom: 274px;
+	left: 414px;
+	border-radius: 5px 0 0 5px;
+	height: 35px;
+}
+
+#image-6
+{
+ 	width: 350px;
+	background-color: rgba(0,204,0,0.40);
+	border-radius: 5px 0 0 5px;
+	position: absolute;
+	bottom: 54px;
+	left: 40px;
+	height: 35px;
+}
+
+#image-7
+{
+ 	width: 350px;
+	background-color: rgba(0,204,0,0.40);
+	border-radius: 5px 0 0 5px;
+	position: absolute;
+	bottom: 54px;
+	left: 414px;
+	height: 35px;
+}
+
+#image-9
+{
+ 	width: 350px;
+	background-color: rgba(0,204,0,0.40);
+	border-radius: 5px 0 0 5px;
+	position: absolute;
+	bottom: -166px;
+	left: 40px;
+	height: 35px;
+}
+
+#image-10
+{
+ 	width: 350px;
+	background-color: rgba(0,204,0,0.40);
+	border-radius: 5px 0 0 5px;
+	position: absolute;
+	bottom: -166px;
+	left: 414px;
+	height: 35px;
+}
+.retouche p{
+	color: white;
+	font-size: 1em;
+	position: relative;
+	left: 12px;
+	bottom: 5px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.retouche span{
+
+	position: relative;
+	left: 70px;
+}
+#image-5 span
+{
+	left: 63px;
+}
+
+#image-6 span
+{
+	left: 215px;
+}
+
+#image-10 span
+{
+	left: 14px;
+}
+
+#image-9 span
+{
+	left: 52px;
+}
+
+/*section carte*/
+
+#carte .contenu
+{
+	position: absolute;
+	right: 70px;
+	top: 390px; 
+	
+	
+}
+#carte .contenu
+{
+	
+	height: 950px;
+}
+
+/*posibilité*/
+
+#steps ul li
+{
+	width: 150px;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	
+
+
+
+}
+
+#steps ul 
+{
+	
+	display: block;
+	position: absolute;
+	left: 750px;
+	top:140px;
+	padding-right: 20px;
+}
+
+#steps-1 p
+{
+	position: relative;
+	right:  10px;
+	
+}
+
+#steps-3 p
+{
+	position: relative;
+	left:  15px;
+	
+}
+
+#steps-2 p
+{
+	
+	font-size: 15px;
+}
+
+#steps-1 a button
+{
+	background-color:  #ff6600;
+	border-style: none;
+	color: white;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	position: relative;
+	bottom: 10px;
+	border-radius: 3px;
+
+}
+
+#steps-2 a button
+{
+	background-color:  #ff6600;
+	border-style: none;
+	color: white;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	position: relative;
+	bottom: 9px;
+	left: 8px;
+	border-radius: 3px;
+
+}
+
+#steps-3 a button
+{
+	background-color:  #ff6600;
+	border-style: none;
+	color: white;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	position: relative;
+	bottom: 8px;
+	left:22px;
+	border-radius: 3px;
+}
+
+#steps a button:hover
+{
+	background-color: #00cc00;
+}
+
+#steps img
+{
+	width: 50px;
+	position: absolute;
+	bottom: 200px
+}
+
+#steps-1 img
+{
+	left: 60px;
+}
+
+#steps-2 img
+{
+	left: 215px;
+}
+
+#steps-3 img
+{
+	right:90px;
+}
+
+
+#steps h4
+{
+	color: #00cc00;
+	padding-top: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+#steps-3 h4
+{	padding-left: 20px;
+}
+
+/*contact*/
+
+#contact
+{
+	background-color: #ff6600;
+	height: 200px;
+	margin: 60px 0 ;
+	text-align: center;
+
+}
+
+
+#contact form input
+{
+	height: 30px;
+	padding-left: 10px;
+	border-style: none;
+	border-radius: 3px ;
+	position: relative;
+	top: 125px;
+
+
+}
+
+.input
+{
+	width: 300px;
+
+}
+
+#envoyer
+{
+	color: white;
+	background-color:#00cc00;
+	text-align: center;
+}
+
+#envoyer:hover
+{
+	color:#00cc00;
+	background-color: white;
+	
+}
+
+#contact h3
+{
+	color: white;
+	font-size: 25px;
+	position:relative;
+}
+
+#contact p
+{
+	color: white;
+	position:relative;
+	font-style: italic;
+	bottom: 17px;
+	font-weight: bold;
+}
+
+#center
+{
+	position: absolute;
+	left: 500px;
+	bottom:-360px; 
+
+}
+
+#center h3
+{
+	left: -90px;
+}
+
+#center img
+{
+	width: 55px;
+	position: absolute;
+	top: 25px;
+	left: -70px;
+	border-radius: 20px;
+	border: solid #00cc00;
+}
+
+/*footer*/
+
+footer
+{
+	background-color: #ff6600;
+	height: 260px;
+}
+footer h1
+{
+	color: #00cc00;
+	padding: 80px 0 0 0 ;
+	text-align: center;
+	text-transform: uppercase;
+}
+.Copyright
+{
+	text-align: center;	
+	font-weight: bold;
+	margin-top: 30px ;
+	color: white;
+	
+	
+}
+
