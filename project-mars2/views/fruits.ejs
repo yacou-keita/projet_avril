@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   
+    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/fruits.css">
+    <link rel="stylesheet" type="text/css" href="/css/aliment.css">
+</head>
+<body>
+
+	    <!--bar de navigation -->
+ <% include header.ejs %>
+
+<div>
+	<img src="/images/shutterstock_566805751_0.jpg" id="header">
+</div>
+
+
+  <!-- menu -->
+	<div class="container">
+		<h1 id="span"><span>NOS CONDIMENTS</span></h1>
+
+			<nav>
+			<ul class="nav nav-pills" >
+				<li role="presentation" class="active"><a href="#1" data-toggle="tab">Fruits</a></li>
+				<li role="presentation"><a href="#2" data-toggle="tab">Légumes</a></li>
+				<li role="presentation"><a href="#3" data-toggle="tab">Viandes et poissons</a></li>
+				<li role="presentation"><a href="#4" data-toggle="tab">Epices</a></li>
+			</ul>
+		</nav>
+
+		<div !--lass="tab-content">
+			 <% if (fruits) { %>
+			<div class="tab-pane active" id="1">
+				<% fruits.forEach((fruit, index) => { %>
+				<div class="col-sm-6 col-md-4" id="col">
+						<div class="thumbnail">
+							<img src="/images/<%= fruit.image %>" alt="...">
+							<div class="price"><%= fruit.prix %></div>
+							<div class="caption">
+								<h4><%= fruit.nom %></h4>
+								<p><%= fruit.description %></p>
+								<div class="row">
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order"><span class="glyphicon glyphicon-shopping-cart"> commander</a>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order">ajouter <span class="glyphicon glyphicon-shopping-cart"></a>
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<% }); %>
+				<% } %> -->
+
+		</div>	
+
+		<!-- menu2 -->
+
+		<div class="tab-pane" id="2">
+
+				<!-- <div class="col-sm-6 col-md-4" id="col">
+						<div class="thumbnail">
+							<img src="fruits/abricot.jpg" alt="...">
+							<div class="price">9.50 €</div>
+							<div class="caption">
+								<h4>L’abricot</h4>
+								<p>L'abricot contient 9 g de sucre pour 100 g, comme la prune, mais sa portion habituelle est de 65 g ce qui donne 5,85 g de sucre par portion.</p>
+								<div class="row">
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order"><span class="glyphicon glyphicon-shopping-cart"> commander</a>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order">ajouter <span class="glyphicon glyphicon-shopping-cart"></a>
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+					</div> -->
+
+		</div>	
+
+		<div class="tab-pane" id="3">
+
+				<!-- <div class="col-sm-6 col-md-4" id="col">
+						<div class="thumbnail">
+							<img src="fruits/abricot.jpg" alt="...">
+							<div class="price">9.50 €</div>
+							<div class="caption">
+								<h4>L’abricot</h4>
+								<p>L'abricot contient 9 g de sucre pour 100 g, comme la prune, mais sa portion habituelle est de 65 g ce qui donne 5,85 g de sucre par portion.</p>
+								<div class="row">
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order"><span class="glyphicon glyphicon-shopping-cart"> commander</a>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order">ajouter <span class="glyphicon glyphicon-shopping-cart"></a>
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+					</div> -->
+
+		</div>	
+
+		<div class="tab-pane" id="4">
+
+				<!-- <div class="col-sm-6 col-md-4" id="col">
+						<div class="thumbnail">
+							<img src="fruits/abricot.jpg" alt="...">
+							<div class="price">9.50 €</div>
+							<div class="caption">
+								<h4>L’abricot</h4>
+								<p>L'abricot contient 9 g de sucre pour 100 g, comme la prune, mais sa portion habituelle est de 65 g ce qui donne 5,85 g de sucre par portion.</p>
+								<div class="row">
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order"><span class="glyphicon glyphicon-shopping-cart"> commander</a>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" role="button" class="btn btn-order">ajouter <span class="glyphicon glyphicon-shopping-cart"></a>
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+					</div> -->
+
+		</div>	
+
+	</div>	
+
+</div>
+
+<!-- Modal inscription -->
+  <div class="modal fade" id="inscription">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Inscription</h4>
+        </div>
+        <div class="modal-body">
+         <form id="contact-form" method="post" action="" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname">Prénom <span class="blue">*</span></label>
+                                <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name">Nom <span class="blue">*</span></label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Email <span class="blue">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone">Téléphone</label>
+                                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message <span class="blue">*</span></label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="blue"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            
+                        </div>
+                    </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default">Envoyer</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Modal connexion -->
+  <div class="modal fade" id="connexion">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Connexion</h4>
+        </div>
+        <div class="modal-body">
+          <form id="contact-form" method="post" action="" role="form">
+                        <div class="row">
+                            
+                            
+                            <div class="col-md-6">
+                                <label for="email">Email <span class="blue">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder=" Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="passe">Mot de passe <span class="blue">*</span></label>
+                                <input id="passe" type="text" name="passe" class="form-control" placeholder="Mot de passe ">
+                                <p class="comments"></p>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <p class="blue"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            
+                        </div>
+                    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default">se connecter</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+			
+<!-- footer -->
+<% include footer.ejs %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/fruits.js"></script>
+
+</body>
+</html>

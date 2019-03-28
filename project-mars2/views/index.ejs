@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/aliment.css">
+
+
+</head>
+<body>
+    <!--bar de navigation -->
+  <% include header.ejs %>
+<!-- Modal connexion -->
+  <div class="modal fade" id="connexion">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Connexion</h4>
+        </div>
+        <div class="modal-body">
+          <form id="contact-form" method="post" action="/" role="form">
+                        <div class="row">
+                            
+                            
+                            <div class="col-md-6">
+                                <label for="email">Email <span class="blue">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder=" Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="password">Mot de passe <span class="blue">*</span></label>
+                                <input id="password" type="password" name="password" class="form-control" placeholder="Mot de passe ">
+                                <p class="comments"></p>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <p class="blue"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                          <button type="submit" class="btn btn-default">se connecter</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<p id="grandTitre"> BIENVENUE SUR<span class="titre"> Online</span><span class="titre1">Market</span></p>
+
+
+<!-- carousel -->
+ 
+ <div class="container-fluid"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="/images/d4.png" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="/images/m4.png"  style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="/images/d3.png"  style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- nos service -->
+<div class="container" id="service">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="/images/case-icon1-white.png">
+       <h3  class="titreh3">Engagement qualité</h3>
+        <div class="border"></div>
+       <p class="p">Nous nous engageons à offrir à nos clients, un service professionnel et personnalisé en misant sur une garantie de discrétion et de confidentialité, un devoir de transparence et de système qualité.</p>
+      
+    </div>
+
+    <div class="col-md-4">
+       <img src="/images/case-icon2-white.png">
+       <h3 class="titreh3">Ressources matérielles</h3>
+        <div class="border"></div>
+       <p class="p">Nous disposons de moyens logistiques (Drones, matériels informatiques, serveurs sécurisés) adaptés à chacun de nos domaines d’intervention.</p>
+      
+    </div>
+
+    <div class="col-md-4">
+       <img src="/images/case-icon3-white.png">
+       <h3  class="titreh3">Performance Rapide</h3>
+       <div class="border"></div>
+       <p class="p">Nos ressources humaines et matérielles permettent non seulement de respecter les exigences de nos clients, mais aussi d’exécuter les travaux rapidement et à moindre coût et de respecter les délais de livraison des résultats.</p>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<% include footer.ejs %>
+
+<script type="text/javascript" src="/js/aliment.js"></script>
+</body>
+</html>

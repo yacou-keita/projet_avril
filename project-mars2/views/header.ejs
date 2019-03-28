@@ -1,0 +1,25 @@
+ <!--bar de navigation -->
+ <nav class="navbar navbar-fixed-top" id="navbarfixe">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-brand titre">Online<span class="titre1">Market</span></span>
+    </div>
+    <ul class="nav navbar-nav" >
+       <li class="active"><a href="/espace-administration">Accueil</a></li>
+      <li><a href="/espace-administration">Systeme Administration</a></li>
+      <li><a href="#">Restauration</a></li>
+      <li><a href="#">Contacter-nous</a></li>
+    </ul>
+    <% if (user) { %>
+    <ul class="nav navbar-nav navbar-right" id="lien-inscription">
+      <li><a href="#" class="lien"><span class="glyphicon glyphicon-user" ></span> <%= user.nom %></a></li>
+      <li><a href="/deconnexion" class="lien"><span class="glyphicon glyphicon-log-out" ></span> Se déconnecter</a></li>
+    </ul>
+    <% } else { %>
+    <ul class="nav navbar-nav navbar-right" id="lien-inscription">
+      <li><a href="/inscription" class="lien"><span class="glyphicon glyphicon-user" ></span> S'inscrire</a></li>
+      <li><a href="/connexion"><span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>
+    </ul>
+    <% } %>
+  </div>
+</nav>

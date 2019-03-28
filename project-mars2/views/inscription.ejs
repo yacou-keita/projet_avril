@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <% if (message) { %>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <%= message %>
+        </div>
+        <% } %>
+        <div class="divider"></div>
+        <div class="heading"><h2>inscription</h2></div>
+
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <form id="form-contact" method="post" action="" role="form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="firstname">Prénom<span class="blue"> *</span></label>
+                            <input type="text"   id="firstname" name="firstname" class="form-control"  placeholder="votre prénom" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="name">Nom<span class="blue"> *</span></label>
+                            <input type="text"  id="name" name="name" placeholder="votre nom" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone">Téléphone</label>
+                            <input type="text"  id="phone" name="phone" placeholder="votre telephone" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email">Email<span class="blue"> *</span></label>
+                            <input type="text"  id="email" name="email" placeholder="votre email" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="password">Mot de passe</label>
+                            <input type="password"  id="password" name="password" placeholder="votre mot de passe" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="word">Confirmer le mot de passe</label>
+                            <input type="password"  id="word" name="word" placeholder="confirmez votre mot de passe" class="form-control" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">se connecter</button>
+                </form>
+            </div>  
+        </div>
+    </div>
+
+</body>
+</html>
