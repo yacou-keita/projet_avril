@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>accueuil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/aliment.css">
+
+
+</head>
+<body>
+    <!--bar de navigation -->
+ <nav class="navbar navbar-fixed-top" id="navbarfixe">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-brand titre">Online<span class="titre1">Market</span></span>
+    </div>
+    <ul class="nav navbar-nav" >
+      <li class="active"><a href="#">Accueil</a></li>
+      <li class="active"><a href="#">Systeme Administration</a></li>
+      <li><a href="pageSecondaire/restaurantion.html">Restauration</a></li>
+      <li class="active"><a href="#">Contacter-nous</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right" id="lien-inscription">
+      <li><a href="#inscription" data-toggle="modal" class="lien"><span class="glyphicon glyphicon-user" ></span> S'inscrire</a></li>
+      <li><a href="#connexion" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>
+    </ul>
+  </div>
+</nav>
+
+<p id="grandTitre"> BIENVENUE SUR<span class="titre"> Online</span><span class="titre1">Market</span></p>
+
+ <!-- Modal inscription -->
+  <div class="modal fade" id="inscription">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content border-form">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title couleur-form titre-form">Inscription</h4>
+          <div class="taille-form-titre"></div>
+        </div>
+        <div class="modal-body">
+         <form id="contact-form" method="post" action="" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname" class="couleur-form">Prénom <span class="blue">*</span></label>
+                                <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name" class="couleur-form">Nom <span class="blue">*</span></label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="couleur-form">Email <span class="blue">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="couleur-form">Téléphone<span class="blue">*</span></label>
+                                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                                <p class="comments"></p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="password1" class="couleur-form">mot de passe<span class="blue">*</span></label>
+                                <input id="password1" type="password" name="password1" class="form-control" placeholder="Votre Téléphone">
+                                <p class="comments"></p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="password2" class="couleur-form">mot de passe<span class="blue">*</span></label>
+                                <input id="password2" type="password" name="password1" class="form-control" placeholder="Votre Téléphone">
+                                <p class="comments"></p>
+                            </div>
+
+                            
+                            <div class="col-md-12">
+                                <p class="blue"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            
+                        </div>
+                    </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default button-form"><span class="glyphicon glyphicon-user"> S'incrire</span></button>
+          <button type="button" class="btn btn-default button-form" data-dismiss="modal"><span class="glyphicon glyphicon-remove"> Fermer</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Modal connexion -->
+  <div class="modal fade" id="connexion">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content border-form">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title couleur-form titre-form" >Connexion</h4>
+           <div class="taille-form-titre2"></div>
+        </div>
+        <div class="modal-body">
+          <form id="contact-form" method="post" action="" role="form">
+                        <div class="row">
+                            
+                            
+                            <div class="col-md-6">
+                                <label for="email" class="couleur-form">Email <span class="blue">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder=" Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="passe" class="couleur-form">Mot de passe <span class="blue">*</span></label>
+                                <input id="passe" type="text" name="passe" class="form-control" placeholder="Mot de passe ">
+                                <p class="comments"></p>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <p class="blue"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            
+                        </div>
+                    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default button-form"><span class="glyphicon glyphicon-log-in"> Se connecter</span></button>
+          <button type="button" class="btn btn-default button-form" data-dismiss="modal"><span class="glyphicon glyphicon-remove"> Fermer</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- carousel -->
+ 
+ <div class="container-fluid"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="fruits/m4.png" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="fruits/d3.png"  style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="fruits/d4.png"  style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- nos service -->
+<div class="container" id="service">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="images/case-icon1-white.png">
+       <h3  class="titreh3">Engagement qualité</h3>
+        <div class="border"></div>
+       <p class="p">Nous nous engageons à offrir à nos clients, un service professionnel et personnalisé en misant sur une garantie de discrétion et de confidentialité, un devoir de transparence et de système qualité.</p>
+      
+    </div>
+
+    <div class="col-md-4">
+       <img src="images/case-icon2-white.png">
+       <h3 class="titreh3">Ressources matérielles</h3>
+        <div class="border"></div>
+       <p class="p">Nous disposons de moyens logistiques (Drones, matériels informatiques, serveurs sécurisés) adaptés à chacun de nos domaines d’intervention.</p>
+      
+    </div>
+
+    <div class="col-md-4">
+       <img src="images/case-icon3-white.png">
+       <h3  class="titreh3">Performance Rapide</h3>
+       <div class="border"></div>
+       <p class="p">Nos ressources humaines et matérielles permettent non seulement de respecter les exigences de nos clients, mais aussi d’exécuter les travaux rapidement et à moindre coût et de respecter les délais de livraison des résultats.</p>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- footer -->
+
+<div class="container-fluid" id="fluid">
+
+  <div class="container" id="">
+  <section id="contact">
+    <div class="wrapper">
+      <h3>CONTACTEZ-NOUS</h3>
+      <p>Besoin d’informations ? Ou vous souhaitez rencontrez notre équipe dynamique et motivée ? Veuillez rentrez en contact avec nous !</p>
+            
+        <form id="contact-form" method="post" action="" role="form">
+                        <div class="row" id="ligneFooter">
+                            
+                            <div class="col-md-4">
+                                <label for="nom">Nom<span class="blue">*</span></label>
+                                <input id="nom" type="text" name="nom" class="form-control" placeholder=" votre nom">
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <label for="email">Email <span class="blue">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder=" Email">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="message">Message <span class="blue">*</span></label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Votre Message" ></textarea>
+                                <p class="comments"></p>
+                            </div>
+
+                            <button type="button" class="btn btn-default">Envoyer</button>
+
+                        </div>
+
+        </form>
+                            
+                           
+                            
+
+    </div>
+    
+  </section>
+  
+  <footer>
+    <div class="wrapper">
+      <h1><span class="titre">Online</span><span class="titre1">Market</span></h1>
+      <div class="Copyright">Copyright © theesboys-2019. Tous droits réservés.</div>
+    </div>
+  </footer>  
+
+
+
+  </div>
+  
+</div>
+
+
+ 
+
+<script type="text/javascript" src="js/aliment.js"></script>
+</body>
+</html>

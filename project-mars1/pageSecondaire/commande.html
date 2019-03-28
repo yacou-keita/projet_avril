@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>commande</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="divider"></div>
+		<div class="heading"><h2>passer votre commande</h2></div>
+
+
+
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<form id="form-contact" method="post">
+					<div class="row">
+
+						<div class="col-md-12">
+							<label for="nom">Nom<span class="blue"> *</span></label>
+							<input type="text"  id="nom" name="text" placeholder=" pouvons nous connaître votre nom" class="form-control" value="">
+						</div>
+
+						<div class="col-md-12">
+							<label for="Prenom">Prenom<span class="blue"> *</span></label>
+							<input type="text"  id="Prenom" name="prenom" placeholder="pouvons nous connaître votre Prenom " class="form-control" value="">
+						</div>
+
+						<div class="col-md-12">
+							<label for="ville">Ville<span class="blue"> *</span></label>
+							<input type="text"  id="ville" name="ville" placeholder="dans quelle ville devons vous le livrez" class="form-control" value="">
+						</div>
+
+						<div class="col-md-12">
+							<label for="commune">commune<span class="blue"> *</span></label>
+							<input type="text"  id="commune" name="commune" placeholder="la commune " class="form-control" value="">
+						</div>
+
+						<div class="col-md-12">
+							<label for="Prenom">Quartier<span class="blue"> *</span></label>
+							<input type="text"  id="quartier" name="quartier" placeholder="le quartier " class="form-control" value="">
+						</div>
+
+						<div class="col-md-12">
+							<label for="prix">prix<span class="blue"> *</span></label>
+							<input type="text"  id="prix" name="prix" placeholder="entrer le prix du produit" class="form-control" value="">
+						</div>
+
+
+						<div class="row">
+							<div class="col-md-6">
+								<input type="submit" class="button1"  value="Confirmer la commande" onclick="commande()">
+							</div>
+							<div class="col-md-6">
+								<input type="submit" class="button1"  value="voir le panier">
+							</div>
+
+						</div>
+						
+					</div>
+					
+				</form>
+			</div>	
+		</div>
+	</div>
+
+
+
+
+<script type="text/javascript" src="js/commande.js"></script>
+</body>
+</html>
